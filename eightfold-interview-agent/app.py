@@ -49,7 +49,7 @@ def call_groq_ai(system_prompt: str, user_message: str, chat_history: list = Non
     messages.append({"role": "user", "content": user_message})
     
     payload = {
-        "model": "llama3-8b-8192",
+        "model": "llama-3.1-8b-instant",
         "messages": messages,
         "temperature": 0.7,
         "max_tokens": 800
